@@ -19,7 +19,7 @@ public class BaseMovement : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (myRigidbody)
+        if (!myRigidbody)
         {
             myRigidbody = GetComponent<Rigidbody>();
         }

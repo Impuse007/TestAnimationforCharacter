@@ -51,14 +51,10 @@ public class PlayerMovement : BaseMovement
                 transform.rotation = Quaternion.Euler(0f, rot, 0f);
 
             }
-            else { }
+            else
             {
                 myAnim.ChangeAnimBoolValue("Running", false);
             }
         }
-
-
-
-
     }
 }
