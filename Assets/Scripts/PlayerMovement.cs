@@ -7,8 +7,15 @@ public class PlayerMovement : BaseMovement
 
     [SerializeField]
     private AnimatorController myAnim;
-
     private Vector3 tempMovement;
+    private float jumpSpeed;
+    private float jumpButtonGracePeriod;
+    private float jumpHorizontalSpeed;
+
+    private float? lastGroundedTime;
+    private float? jumpButtonPressedTime;
+    private bool isJumping;
+    private bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
